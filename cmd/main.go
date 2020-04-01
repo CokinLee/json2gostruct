@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/CokinLee/json2gostruct"
 )
 
@@ -39,6 +40,6 @@ var j = `
 `
 
 func main() {
-	s, _ := json2gostruct.CreateJsonModel(j, "J")
+	s, _ := json2gostruct.CreateJSONModel(j, "J")
 	fmt.Println(s)
 }
